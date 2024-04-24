@@ -34,7 +34,7 @@ operators = {
     '-': sub,
     '*': mult,
     '/': div,
-    '^': pwr
+    # '^': pwr
 }
 
 
