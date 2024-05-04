@@ -1,7 +1,7 @@
 # AU-Software-development
 
-## This repository is for educational purposes.
+### This repository is for educational purposes.
 
-Factory pattern in functional paradigm
+Евдокимов Филипп, СПбАУ им. Ж. И. Алфёрова, группа 202
 
-bla-bla-bla
+Этот репозиторий посвящён предмету "Разработка программного обеспечения". В каждой директории содержатся файлы, относящиеся к заданиям за семестр.
