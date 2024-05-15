@@ -12,7 +12,8 @@ operators = {
     '+': lambda a, b: a + b,  # Сложение
     '-': lambda a, b: a - b,  # Вычитание
     '*': lambda a, b: a * b,  # Умножение
-    '/': lambda a, b: a / b if b != 0 else ZeroDivisionError("Division by zero")  # Деление (с проверкой деления на ноль)
+    '/': lambda a, b: a / b if b != 0 else ZeroDivisionError("Division by zero"),  # Деление (с проверкой деления на ноль)
+    #'#': lambda  a, b: a//b if b != 0 else ZeroDivisionError("Division by zero") -- Тестирование паттерна
     # '^': lambda a, b: a ** b  # Возведение в степень (закомментировано)
 }
 
@@ -28,7 +29,7 @@ def calculate(operators):
     line = input(prompt)
 
     # Использование регулярного выражения для разбиения ввода на операнды и оператор
-    match = re.match(r'(\d+)\s*([-+*/^])\s*(\d+)', line)
+    match = re.match(r'(\d+)\s*([-+*/^#])\s*(\d+)', line)
     if match:
         # Извлекаем операнды и оператор
         operand1 = float(match.group(1))
